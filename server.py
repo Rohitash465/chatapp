@@ -3,7 +3,6 @@ from threading import Thread
 from rich import print
 from rich.panel import Panel
 from datetime import datetime
-from playsound import playsound
 
 try:
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -52,4 +51,4 @@ with client:
         name = '[blue]' + name1 + ' | '
         nt = name + time
         print(Panel(data1, title=nt, width=30, style='bold'))
-        playsound('recive.mp3')
+    
